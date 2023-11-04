@@ -1,0 +1,13 @@
+body {
+  background-color: #DCDCDC;
+  height:100vh;
+  margin:0;
+}
+
+.dotted-canvas {
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+

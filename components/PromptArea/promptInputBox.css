@@ -1,0 +1,6 @@
+textarea::placeholder {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+}
