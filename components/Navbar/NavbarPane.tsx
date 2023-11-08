@@ -23,15 +23,15 @@ function NavbarPane({ width, setWidth }: NavbarProps) {
 
   useEffect(() => {
     if (isCollapsed) {
-      setWidth("144px");
+      setWidth("100px");
     } else {
-      setWidth("338px");
+      setWidth("300px");
     }
   }, [isCollapsed]);
 
   return (
     <nav
-      className={`px-[25px] py-[55px] flex flex-col h-[1490px] items-center absolute z-10 bg-[#F6F6F6]`}
+      className={`py-[20px] flex flex-col h-[100%] items-center absolute z-20 bg-[#F6F6F6]`}
       style={{
         width: width,
       }}
@@ -42,16 +42,14 @@ function NavbarPane({ width, setWidth }: NavbarProps) {
         <Image
           src={AppLogo}
           alt="App logo"
-          width={146}
-          height={132}
+          width={60}
           className="cursor-pointer mb-5"
         />
       ) : (
         <Image
           src={AppLogoLarge}
           alt="App logo"
-          width={303}
-          height={71}
+          width={180}
           className="cursor-pointer mb-5"
         />
       )}

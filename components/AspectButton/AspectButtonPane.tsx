@@ -12,7 +12,7 @@ function AspectButton() {
 
   return !isExpanded ? (
     <div
-      className="flex w-[356px] h-[60px] rounded-[10px] border-[#FFF] border-t-[0.5px] border-r-[0.2px] border-b-[2px] border-l-[1.5px] mt-[14px] cursor-pointer"
+      className="flex w-[85%] h-[40px] rounded-[10px] border-[#FFF] border-t-[0.5px] border-r-[0.2px] border-b-[2px] border-l-[1.5px] mt-[5px] cursor-pointer"
       style={{
         background:
           "linear-gradient(153deg, rgba(255, 255, 255, 0.90) 3.54%, rgba(255, 255, 255, 0.29) 100%)",
@@ -22,13 +22,13 @@ function AspectButton() {
       onClick={() => setIsExpanded((curr) => !curr)}
     >
       <div
-        className="relative flex mx-[auto] h-[60px] w-[100%] rounded-[10px] border-[#FFF] border-t-[0.5px] border-r-[0.2px] border-b-[2px] border-l-[1.5px]"
+        className="relative flex mx-[auto] h-[40px] w-[100%] rounded-[10px] border-[#FFF] border-t-[0.5px] border-r-[0.2px] border-b-[2px] border-l-[1.5px]"
         style={{
           background:
             "linear-gradient(153deg, rgba(255, 255, 255, 0.90) 3.54%, rgba(255, 255, 255, 0.29) 100%)",
         }}
       >
-        <div className="text-[#222] text-xl self-center text-center mx-[auto]">
+        <div className="text-[#222] text-base self-center text-center mx-[auto]">
           Aspect
         </div>
         <Image
@@ -42,7 +42,7 @@ function AspectButton() {
     </div>
   ) : (
     <div
-      className="flex flex-col items-center w-[356px] h-[440px] rounded-[10px] border-[#FFF] border-t-[0.5px] border-r-[0.2px] border-b-[2px] border-l-[1.5px] mt-[14px]"
+      className="flex flex-col items-center w-[85%] rounded-[10px] border-[#FFF] border-t-[0.5px] border-r-[0.2px] border-b-[2px] border-l-[1.5px] mt-[14px]"
       style={{
         background: "#F0F0F3",
         boxShadow: "0px 2px 6px 0px rgba(0, 0, 0, 0.25)",
@@ -50,14 +50,14 @@ function AspectButton() {
       }}
     >
       <div
-        className="relative flex mx-[auto] h-[60px] w-[100%] rounded-[10px] border-[#FFF] border-t-[0.5px] border-r-[0.2px] border-b-[2px] border-l-[1.5px] mb-[19px] cursor-pointer"
+        className="relative flex mx-[auto] h-[40px] w-[100%] rounded-[10px] border-[#FFF] border-t-[0.5px] border-r-[0.2px] border-b-[2px] border-l-[1.5px] mb-[5px] cursor-pointer"
         style={{
           background:
             "linear-gradient(153deg, rgba(255, 255, 255, 0.90) 3.54%, rgba(255, 255, 255, 0.29) 100%)",
         }}
         onClick={() => setIsExpanded((curr) => !curr)}
       >
-        <div className="text-[#222] text-xl text-center self-center mx-[auto]">
+        <div className="text-[#222] text-base text-center self-center mx-[auto]">
           Aspect
         </div>
         <Image

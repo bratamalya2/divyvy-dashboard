@@ -12,9 +12,9 @@ const Dashboard: React.FC = () => {
   const [navbarWidth, setNavbarWidth] = useState("0px");
 
   return (
-    <div className="relative top-0 left-0 w-full h-screen">
+    <div className="relative top-0 left-0 w-full h-screen z-10">
       <Canvas />
-      <div className="relative top-0 left-0 w-full h-screen">
+      <div className="relative top-0 left-0 w-full h-[99vh]">
         <Navbar width={navbarWidth} setWidth={setNavbarWidth} />
         <LeftSideBar navbarWidth={navbarWidth} />
         <RightSidebar />

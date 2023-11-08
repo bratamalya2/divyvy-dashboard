@@ -9,12 +9,15 @@ function DividerLine({ isCollapsed }: { isCollapsed: boolean }) {
     if (isCollapsed) {
       setWidth("60px");
     } else {
-      setWidth("283px");
+      setWidth("160px");
     }
   }, [isCollapsed]);
 
   return (
-    <div className={`bg-[#DDDCDC] h-[6px] my-5`} style={{ width: width }}></div>
+    <div
+      className={`bg-[#DDDCDC] h-[6px] mb-5 mx-[auto]`}
+      style={{ width: width }}
+    ></div>
   );
 }
 

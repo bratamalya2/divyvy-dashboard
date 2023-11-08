@@ -19,8 +19,7 @@ function SmallRectangle({
       <Image
         src={iconFileImg}
         alt="nav-icon"
-        width={182}
-        height={155}
+        width={82}
         className="scale-125 cursor-pointer pb-5 border-none border-t-[0.5px] border-r-[0.2px] border-b-[2px] border-l-[1.5px]"
       />
     );
@@ -28,7 +27,7 @@ function SmallRectangle({
   return (
     <>
       <div
-        className="flex items-center justify-center w-[94.6px] h-[90px] self-stretch rounded-3xl border-t-[0.5px] border-r-[0.2px] border-b-[2px] border-l-[1.5px] border-[#FFF] mb-5"
+        className="flex items-center justify-center h-[70px] rounded-3xl border-t-[0.5px] border-r-[0.2px] border-b-[2px] border-l-[1.5px] border-[#FFF] mb-5"
         style={{
           background:
             "linear-gradient(153deg, rgba(255, 255, 255, 0.14) 3.54%, rgba(255, 255, 255, 0.03) 100%)",
@@ -41,16 +40,14 @@ function SmallRectangle({
           <Image
             src={iconFileImg}
             alt="nav-icon"
-            width={90}
-            height={90}
+            height={70}
             className="scale-125 cursor-pointer"
           />
         ) : (
           <Image
             src={iconFileImg}
             alt="nav-icon"
-            width={60}
-            height={60}
+            height={52}
             className="cursor-pointer"
           />
         )}

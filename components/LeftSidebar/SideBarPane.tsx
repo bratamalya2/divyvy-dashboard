@@ -7,7 +7,8 @@ import SidebarComponent from "../SidebarComponent";
 
 import sidebarInfo from "./sidebarInfo";
 
-import sideToggleImage from "@/public/images/Side Toggle.png";
+import ToggleLeft from "@/public/images/Side Toggle.png";
+import ToggleRight from "@/public/images/Side Toggle 2.png";
 
 type SideBarPaneProps = {
   navbarWidth: string;
@@ -19,8 +20,8 @@ function SideBarPane({ navbarWidth }: SideBarPaneProps) {
   const [marginLeft, setMarginLeft] = useState("0px");
 
   useEffect(() => {
-    if (collapsed) setWidth("205px");
-    else setWidth("397px");
+    if (collapsed) setWidth("125px");
+    else setWidth("250px");
   }, [collapsed]);
 
   useEffect(() => {
@@ -31,7 +32,7 @@ function SideBarPane({ navbarWidth }: SideBarPaneProps) {
 
   return (
     <div
-      className={`absolute h-[1257px] flex flex-col items-center my-[45px] py-[20px] z-20 bg-[#DCDCDC] rounded-[60px] border-[#FFF] border-x-[0.5px] border-y-[0.5px] w-[${width}] max-w-[${width}]`}
+      className={`absolute flex flex-col items-center mt-[4px] py-[20px] z-20 bg-[#DCDCDC] rounded-[60px] border-[#FFF] border-x-[0.5px] border-y-[0.5px] w-[${width}] max-w-[${width}]`}
       style={{
         background:
           "linear-gradient(153deg, rgba(255, 255, 255, 0.72) 3.54%, rgba(255, 255, 255, 0.17) 100%)",
@@ -45,16 +46,17 @@ function SideBarPane({ navbarWidth }: SideBarPaneProps) {
         <SidebarComponent
           key={i}
           isCollapsed={collapsed}
-          shortNameFileName={obj.shortNameFileName}
-          longNameFileName={obj.longNameFileName}
+          background={obj.background}
+          boxShadow={obj.boxShadow}
+          shortNameText={obj.shortNameText}
+          longNameText={obj.longNametext}
           symbolFileName={obj.imgFileName}
         />
       ))}
       <Image
-        src={sideToggleImage}
+        src={!collapsed ? ToggleLeft : ToggleRight}
         alt="Collapse"
-        width={53}
-        height={131}
+        width={35}
         className="absolute top-[50%] left-[100%] cursor-pointer"
         onClick={() => setCollapsed((curr) => !curr)}
       />
